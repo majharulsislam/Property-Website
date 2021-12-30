@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Propertices</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- slick css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+	<!-- font awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+	<!-- fav icon -->
+	<link rel="icon" type="image/x-icon" href="asset/img/logo/logo-white.png">
+
+	<!-- JqueryUi -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+
+	<!-- Main Css -->
+	<link href="asset/css/style.css" rel="stylesheet">
+	<link href="asset/css/responsive-2.css" rel="stylesheet">
+	<link href="asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Body code start here -->
+<div class="wrapper_body">
+	<!-- header -->
+	<header class="header_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- mobile logo -->
+					<div class="mobile_head_logo mobile_show"><a href="index.html"><img src="asset/img/logo/logo.png" alt="logo"></a></div>
+
+					<div class="off_can_trigger mobile_show"><i class="fas fa-bars"></i></div>
+					<nav class="header_menu">
+						<span class="off_canvas_close mobile_show"><i class="fas fa-times"></i></span>
+						<ul class="menu_list d-flex justify-content-center align-items-center">
+							<li class="mobile_logo mobile_show"><a href="index.html"><img src="asset/img/logo/logo-white.png" alt="logo"></a></li>
+							<li><a href="index.html" class="body_copy">HOME</a></li>
+							<li><a href="#" class="body_copy">EXPERIENCE</a></li>
+							<li class="logo"><a href="index.html"><img src="asset/img/logo/logo.png" alt="logo"></a></li>
+							<li><a href="propertis.html" class="body_copy">PROPERTIES</a></li>
+							<li><a href="contact.html" class="body_copy">CONTACT</a></li>
+
+							<!-- mobile social -->
+							<div class="mobile_social mobile_show">
+								<ul class="mobile_social_menu d-flex">
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- properties pagination  -->
+<section class="pagination_propertis">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="pagination_propertis_area">
+					<ul>
+						<li class="active"><a href="#">Buy  &nbsp;/  </a></li>
+						<li><a href="#">  Rent   </a></li>
+						<li><a href="#">  &nbsp; /  Sold</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- properties -->
+<section class="propertices_filter_menu">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="pro_filter_btn">
+					<ul>
+						<li id="view_all_btn" class="actives" onclick="filterSelection('all');changeBtnBackground(this.id)">View all</li>
+						<li id="bed1_btn"  onclick="filterSelection('color');changeBtnBackground(this.id)">1 Bed</li>
+						<li id="bed2_btn"  onclick="filterSelection('animals');changeBtnBackground(this.id)">2 Bed</li>
+						<li id="bed3_btn"   onclick="filterSelection('fruits');changeBtnBackground(this.id)">3+ Bed</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row"> 
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv cars color">
+					<div class="pf_img">
+						<img src="asset/img/group/tab1.png" alt="img">
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>House</li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv  fruits color">
+					<div class="pf_img">
+						<img src="asset/img/group/tab2.png" alt="img">
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>Penthouse</li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv cars animals color">
+					<div class="pf_img">
+						<img src="asset/img/group/tab3.png" alt="img">
+						<div class="offer_tool">
+							<p>UNDER OFFER</p>
+						</div>
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>Townhouse </li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv cars fruits">
+					<div class="pf_img">
+						<img src="asset/img/group/tab4.png" alt="img">
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>Apartment </li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv cars fruits animals color">
+					<div class="pf_img">
+						<img src="asset/img/group/tab5.png" alt="img">
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>House</li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv   fruits animals color">
+					<div class="pf_img">
+						<img src="asset/img/group/tab6.png" alt="img">
+						<div class="offer_tool">
+							<p>SOLD PROPERTY</p>
+						</div>
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>Flat  </li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv cars   animals color">
+					<div class="pf_img">
+						<img src="asset/img/group/tab7.png" alt="img">
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>Flat </li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv cars fruits animals">
+					<div class="pf_img">
+						<img src="asset/img/group/tab8.png" alt="img">
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>Apartment  </li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv cars fruits  ">
+					<div class="pf_img">
+						<img src="asset/img/group/tab1.png" alt="img">
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>Penthouse   </li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv cars   animals color">
+					<div class="pf_img">
+						<img src="asset/img/group/tab2.png" alt="img">
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>Townhouse   </li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv cars fruits animals">
+					<div class="pf_img">
+						<img src="asset/img/group/tab3.png" alt="img">
+						 
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>House  </li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="propertices_filter_cont filterDiv   fruits animals">
+					<div class="pf_img">
+						<img src="asset/img/group/tab4.png" alt="img">
+					</div>
+					<div class="pf_cont">
+						<h2>The Atrium, Park Road,<br> 
+							St Johns Wood NW8</h2>
+						<ul>
+							<li>£3,900,000</li>
+							<li>Apartment  </li>
+							<li>3 Bed</li>
+							<li>2 Bath</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="view_expand_btn">
+					<a href="#">View More Properties</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- footer area -->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- footer bottom area -->
+					<div class="footer_bottom_area">
+						<div class="bottom_logo">
+							<img src="asset/img/logo/logo-white.png" alt="">
+						</div>
+						<div class="footer_bottom_info">
+							<div class="footer_location">
+								<p class="body_copy">58 Acacia Road, St Johns Wood</p>
+								<p class="body_copy">London NW8 6AG</p>
+							</div>
+							<div class="footer_map">
+								<p class="body_copy"><a href="#">View Map</a></p>
+							</div>
+							<div class="footer_contact_area d-flex justify-content-between">
+								<div class="footer_contact_text">
+									<p class="body_copy"><a href="tel:+44 (0)20 3348 8000">+44 (0)20 3348 8000</a></p>
+									<p class="body_copy"><a href="mailto:info@lreo.co.uk">info@lreo.co.uk</a></p>
+								</div>
+								<div class="footer_contact_social">
+									<ul class="footer_social d-flex">
+										<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer_menu_area">
+							<ul class="footer_menu d-flex">
+								<li><a href="#">Privacy and Cookie Policy <span>|</span></a></li>
+								<li><a href="term-condition.html">Terms & Conditions <span>|</span></a></li>
+								<li><a href="#">Lettings Fees and Other Documents</a></li>
+							</ul>
+						</div>
+						<div class="footer_details_text">
+							<p class="body_copy">London Real Estate Office. Registered Office: Regency House, 61a Walton Street, Walton on the Hill, Surrey KT20 7RZ - Registered in England & Wales No. 7494420 VAT No. 112 9274 30<br>
+							© 2019 . FELIX AND FRIENDS LTD . ALL RIGHTS RESERVED - PRIVACY POLICY</p>
+						</div>
+						<div class="designed_by">
+							<p class="body_copy">Designed by <a href="#">Felix&Friends</a></p>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</footer>
+	<!-- End footer area -->
+
+
+</div>
+<!-- End body code start here -->
+
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- slick js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- main js -->
+<script src="asset/js/custom.js"></script>
+<script>
+	filterSelection("all")
+	function filterSelection(c) {
+	  var x, i;
+	  x = document.getElementsByClassName("filterDiv");
+	  if (c == "all") c = "";
+	  for (i = 0; i < x.length; i++) {
+		w3RemoveClass(x[i], "show");
+		if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+	  }
+	}
+
+	function changeBtnBackground(id){
+		 document.getElementById("view_all_btn").classList.remove("actives")
+		 document.getElementById("bed1_btn").classList.remove("actives")
+		 document.getElementById("bed2_btn").classList.remove("actives")
+		 document.getElementById("bed3_btn").classList.remove("actives")
+
+		 document.getElementById(id).classList.add("actives")
+	}
+	
+	function w3AddClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+	  }
+	}
+	
+	function w3RemoveClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		while (arr1.indexOf(arr2[i]) > -1) {
+		  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+		}
+	  }
+	  element.className = arr1.join(" ");
+	}
+	
+	// Add active class to the current button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	  });
+	}
+	</script>
+	
+
+</body>
+</html>

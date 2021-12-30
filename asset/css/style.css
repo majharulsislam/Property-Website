@@ -1,0 +1,1466 @@
+/* ----------------------------------------------------------------------------------------
+Author       : Md. Majharul Islam
+Template Name: LREO
+Version      : 1.0
+ ---------------------------------------------------------------------------------------- */
+
+
+/*------------------------------------------------------------------*
+
+[Table of contents]
+
+01.Reset CSS
+02.Font CSS
+03.General Css 
+04.Common CSS
+
+***-------------------------------------------------------------------*/
+
+
+/* 01. Reset CSS
+=============================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+img{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+a:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+/* Reset CSS End
+===============================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap');
+
+@font-face {
+    font-family: Canela-Regular;
+    src:url("../fonts/Canela-Regular.otf");
+}
+
+@font-face {
+    font-family: Canela-Light;
+    src:url("../fonts/Canela-Light.otf");
+}
+
+@font-face {
+    font-family: Canela-Thin;
+    src:url("../fonts/Canela-Thin.otf");
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-Bold.woff2') format('woff2'),
+        url('../fonts/font/Canela-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-Black.woff2') format('woff2'),
+        url('../fonts/font/Canela-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-BlackItalic.woff2') format('woff2'),
+        url('../fonts/font/Canela-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-LightItalic.woff2') format('woff2'),
+        url('../fonts/font/Canela-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-BoldItalic.woff2') format('woff2'),
+        url('../fonts/font/Canela-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-Light.woff2') format('woff2'),
+        url('../fonts/font/Canela-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-Regular.woff2') format('woff2'),
+        url('../fonts/font/Canela-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-MediumItalic.woff2') format('woff2'),
+        url('../fonts/font/Canela-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-Medium.woff2') format('woff2'),
+        url('../fonts/font/Canela-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-RegularItalic.woff2') format('woff2'),
+        url('../fonts/font/Canela-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-Thin.woff2') format('woff2'),
+        url('../fonts/font/Canela-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/font/Canela-ThinItalic.woff2') format('woff2'),
+        url('../fonts/font/Canela-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* 02. Font CSS Start
+=============================================================== */
+
+h1{
+    font-family: Canela-Thin;
+    font-size: 60px;
+    letter-spacing: 0.02em;
+}
+
+h2{
+    font-family: Canela-Thin;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+}
+
+h3 {
+    font-family: Canela-Thin;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+}
+
+p.first-subtitle{
+    font-family: Canela-Thin;
+    font-size: 24px;
+}
+
+p.second-subtitle{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.body_copy{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.body_copy_bolder{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Font CSS End
+=============================================================== */
+
+
+/* 03. General CSS
+=============================================================== */
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    word-wrap: break-word;
+    text-decoration: none !important;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mobile_show{
+    display: none;
+}
+
+/* General Css End
+=============================================================== */
+
+
+/* Home page Css End
+=============================================================== */
+/*header*/
+.header_area {
+    height: 93px;
+    transition: height 0.3s ease-in;
+}
+.header_area.fixed{
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top:  0;
+    height: 75px;
+    z-index: 9999;
+}
+.header_area.fixed .logo{
+    width: 200px;
+}
+ul.menu_list li a {
+    display: block;
+    line-height: 20px;
+    color: #000;
+    padding: 26px 20px;
+}
+ul.menu_list li.if_home{
+    visibility: hidden;
+    transition: 0.1s ease-out;
+}
+.if_home.scroll_logo{
+    visibility: visible !important;
+    transition: 0.1s ease-out;
+}
+.mobile_social li a i{
+    padding: 0 8px;
+    font-size: 20px;
+}
+.mobile_head_logo {
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+/*header request btn*/
+.header_request_view_btn {
+    position: absolute;
+    right: 115px;
+    background: #0F2226;
+}
+.header_request_view_btn a {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    padding: 11px 14px 12px 15px;
+    display: block;
+}
+
+/*end header*/
+
+.lreo_big_logo {
+    margin-top: 45px;
+}
+.after_banner_text {
+    background: #F5F6F6;
+    padding: 161px 90px;
+    margin:0 70px;
+    margin-top: -75px;
+}
+.after_banner_text h3 {
+    letter-spacing: 0.02em;
+    color: #2B342F;
+}
+.banner_img {
+    margin: 0 35px;
+    margin-top: -85px;
+}
+.banner_img img {
+    width: 100%;
+}
+.our_team_area {
+    margin-top: 140px;
+}
+.our_team_title h1 {
+    line-height: 75px;
+}
+.our_team_title h3 {
+    max-width: 854px;
+    margin: 25px 0 45px;
+}
+
+.our_team_title h3 {
+    max-width: 854px;
+    margin: 25px 0 45px;
+}
+.our_team_slide_area {
+    background: #F5F6F6;
+    margin-top: 60px;
+    padding-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.our_team_img img {
+    margin: 0 auto;
+}
+.our_team_text h3 {
+    margin: 25px 0 5px;
+}
+.our_team_slide_area .slick-list.draggable {
+    margin-top: -45px;
+}
+.our_team_slide_area .top-custom-arrow.slick-custom-arrow-left i,.our_team_slide_area .top-custom-arrow.slick-custom-arrow-right i {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+.our_team_slide_area .top-custom-arrow.slick-custom-arrow-left i {
+    left: -50px;
+    right: auto;
+}
+
+.after_team_text {
+    margin: 140px 0;
+}
+.after_team_text h2 {
+    max-width: 1040px;
+}
+ul.buy_rent_list_menu {
+    margin: 30px 0;
+}
+ul.buy_rent_list_menu li a {
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 0.02em;
+    font-family: Canela-Thin;
+    color: #8C8C8C;
+}
+ul.buy_rent_list_menu li.active a {
+    color: #000;
+}
+.view_sale_btn {
+    border: 1px solid #959090;
+    box-sizing: border-box;
+    width: 182px;
+    height: 41px;
+    text-align: center;
+    line-height: 41px;
+    margin-bottom: 50px;
+    transition: 0.4s;
+}
+.view_sale_btn a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.4s;
+}
+.view_sale_btn:hover{
+    background: #0F2226;
+}
+.view_sale_btn:hover a{
+    color: #fff;
+}
+.buy_rent_single_card {
+    margin-bottom: 45px;
+}
+.buy_rent_text h3 {
+    margin: 22px 0 20px;
+}
+.buy_rent_single_card.card_three {
+    margin-top: -155px;
+}
+.buy_rent_services_area ul.buy_rent_list_menu li a {
+    color: #000;
+}
+.buy_rent_services_area {
+    margin-top: 140px;
+}
+
+section.after_services_img {
+    margin-bottom: -275px;
+}
+
+/*========= Footer ==========*/
+footer.footer_area {
+    background: #0F2226;
+    padding-top: 90px;
+}
+.footer_testimonial_area {
+    padding-top: 190px;
+    width: 98%;
+}
+.footer_testimonial_area h2 {
+    color: #fff;
+    padding-top: 40px;
+}
+.footer_testi_person {
+    padding: 80px 0 120px;
+}
+.footer_testi_person p.body_copy {
+    color: #fff;
+    font-weight: 300;
+}
+.footer_bottom_area p,.footer_bottom_area a {
+    color: #fff;
+}
+.footer_bottom_area .body_copy {
+    font-weight: 300;
+}
+.footer_bottom_area a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
+ul.footer_menu li a,.footer_details_text p,.designed_by p {
+    font-size: 14px;
+}
+
+ul.footer_menu li a span {
+    padding: 0 20px;
+}
+
+.footer_location {
+    padding: 80px 0 30px;
+}
+.footer_contact_area {
+    padding: 30px 0 80px;
+}
+ul.footer_social li a i {
+    font-size: 22px;
+    padding-left: 20px;
+}
+.footer_details_text {
+    padding: 24px 0 20px;
+    max-width: 602px;
+}
+.designed_by {
+    padding-bottom: 30px;
+}
+
+/*========== Footer Testimonial Carousel ===========*/
+.testimonial_slider_area {
+    position: relative;
+    padding-top: 40px;
+}
+span.footer_testimonial_pagingInfo {
+    color: #fff;
+    padding: 0 40px;
+    font-size: 20px;
+    line-height: 23px;
+}
+.testimonial_slider_area .top-custom-arrow i {
+    color: #fff;
+}
+.testimonial_slider_area .top-custom-arrow.slick-custom-arrow-left.slick-arrow, .testimonial_slider_area .top-custom-arrow.slick-custom-arrow-right.slick-arrow {
+    position: absolute;
+    left: 0;
+    top: -24px;
+    cursor: pointer;
+}
+.testimonial_slider_area .top-custom-arrow.slick-custom-arrow-right.slick-arrow {
+    left: 100px;
+}
+
+
+/* About us page Css
+=============================================================== */
+.about_us_banner_area {
+    margin-top: 30px;
+}
+.aboutus_banner_text {
+    background: #0F2226;
+    padding: 355px 148px 85px;
+    margin: 0 70px;
+    margin-top: -270px;
+}
+.aboutus_banner_text h3 {
+    color: #fff;
+}
+section.aboutus_team_slider_area {
+    margin: 230px 70px 145px;
+}
+
+
+.aboutus_team_heading {
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+}
+.aboutus_team_member {
+    position: relative;
+    width: 50%;
+    margin-top: 70px;
+}
+.aboutus_member_info {
+    width: 50%;
+    padding-right: 56px;
+}
+.aboutus_team_info {
+    position: relative;
+}
+.aboutus_team_member_img{
+    position: relative;
+    bottom: 0;
+    max-height: 100%;
+}
+.member_name {
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    transform: rotate(-90deg);
+    max-width: 0;
+    white-space: nowrap;
+    max-height: 0;
+}
+p.ceo {
+    margin: 60px 0 23px;
+}
+h3.member_details {
+    margin-bottom: 45px;
+}
+p.member_short_desc {
+    max-width: 415px;
+    margin-bottom: 20px;
+}
+.member_social_contact {
+    margin-bottom: 80px;
+}
+ul.member_social_icon {
+    padding-left: 15px;
+}
+ul.member_social_icon li a {
+    color: #000;
+    display: block;
+    padding: 0 10px;
+}
+.aboutus_team_slider_items {
+    position: relative;
+}
+.aboutus_slide_bg {
+    background: #F5F6F6;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: -65px
+}
+
+.services_img_card_area {
+    margin: 0 70px;
+}
+.services_card_items {
+    column-count: 2;
+    column-gap: 30px;
+}
+.aboutus_single_service.sell {
+    text-align: right;
+}
+
+.aboutus_single_service {
+    padding-bottom: 30px;
+}
+h1.services_title {
+    margin-bottom: 30px;
+}
+.services_card_text {
+    text-align: left;
+    max-width: 444px;
+}
+.services_card_text h2 {
+    margin: 25px 0 10px;
+}
+.services_card_text p {
+    margin-bottom: 20px;
+}
+.aboutus_single_service.sell .services_card_text {
+    padding-left: 73px;
+    max-width: 500px;
+}
+p.body_copy.color_red {
+    color: #E31B1B;
+}
+
+.about_us_history_area {
+    margin: 110px 0 95px;
+}
+.about_us_history_area .col-md-12, .about_us_lreo_history_area .col-md-12{
+    padding: 0;
+}
+.aboutus_history_text {
+    max-width: 60%;
+    padding: 0 100px;
+}
+.aboutus_history_text h3 {
+    margin-bottom: 30px;
+}
+
+.about_us_lreo_history_area {
+    margin-bottom: 180px;
+}
+.aboutus_lreo_history_text {
+    max-width: 59%;
+    padding: 0px 200px;
+    position: relative;
+}
+.lreo_history_title {
+    position: absolute;
+    left: -102px;
+    top: 92px;
+    transform: rotate(-90deg);
+}
+.aboutus_lreo_history_text h3 {
+    padding-bottom: 70px;
+    padding-top: 110px;
+}
+.aboutus_lreo_text_bg {
+    background: #F5F6F6;
+    width: 1023px;
+    height: 610px;
+    position: absolute;
+    right: 70px;
+    top: -240px;
+    z-index: -1;
+}
+
+/*about us team slider custom*/
+.aboutus_team_slider_items .top-custom-arrow.slick-custom-arrow-left.slick-arrow, .aboutus_team_slider_items .top-custom-arrow.slick-custom-arrow-right.slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: -45px;
+    cursor: pointer;
+}
+.aboutus_team_slider_items .top-custom-arrow.slick-custom-arrow-right.slick-arrow{
+    left: auto;
+    right: -45px;
+}
+span.aboutus_pagingInfo {
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+
+/* Terms & Condition page Css
+=============================================================== */
+section.terms_condition_area {
+    margin: 90px 0 120px;
+}
+h2.term_condition_title {
+    color: #0F2226;
+    margin-bottom: 30px;
+}
+.terms_condition_text p.body_copy {
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Contact page Css
+=============================================================== */
+.if_contact_footer{
+    margin-top: 140px;
+}
+.footer_contact_top_area {
+    margin-bottom: 150px;
+}
+.footer_contact_top_area .col-md-7 {
+    padding: 0;
+    padding-right: 70px;
+    margin-top: -220px;
+}
+.footer_contact_info h1,.footer_contact_info h3,.footer_contact_info p,.footer_contact_info a {
+    color: #fff;
+}
+p.query_text {
+    margin: 22px 0 34px;
+}
+.contact_location {
+    margin: 40px 0 50px;
+}
+.contact_social p {
+    padding-bottom: 30px;
+}
+ul.contact_social li a i {
+    padding: 0 20px 0 0;
+}
+
+
+/* Properties page css
+=============================================================== */
+/*property salse*/
+.property_sales {
+    margin-top: 50px;
+}
+
+/*properties under offer*/
+.property_under_offer {
+    margin-bottom: 140px;
+}
+.property_under_offer_text {
+    max-width: 815px;
+    margin-top: 40px;
+}
+
+/* propertices rent */
+.pro_filter_btn{
+    margin: 35px 0;
+}
+.pro_filter_btn ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro_filter_btn ul li.actives{
+    font-weight: 300;
+    font-size: 24px;
+    font-family: 'Canela';
+    color: black;
+    
+}
+.pro_filter_btn ul li{
+    font-weight: 300;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+    font-family: 'Canela';
+    color: #A7A5A5; 
+}
+.propertices_filter_cont{
+    text-align: center;
+    margin-bottom: 45px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pf_cont h2{
+    font-weight: 300;
+    color: black;
+    font-size: 32px;
+}
+.pf_cont{
+    padding: 20px 0;
+}
+.pf_cont ul{
+    display: flex;
+    justify-content: center;
+}
+.pf_cont ul li{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 10px;
+    padding-top: 15px;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    
+}
+.pf_img{
+    position: relative;
+}
+.pf_img img{
+    width: 100%;
+    overflow: hidden;
+}
+.propertices_filter_cont:hover{
+   transform: translateY(-10px);
+   box-shadow: 0 0 10px gray;
+}
+.offer_tool {
+    background: white;
+    width: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0px;
+    padding-top: 16px;
+}
+.offer_tool p{
+    font-weight: 400;
+    font-size: 18px;
+    color:#0F2226;
+    font-family: 'Work Sans', sans-serif;
+}
+.view_expand_btn{
+    text-align: center;
+    margin-bottom:110px;
+}
+.view_expand_btn a{
+    background: #0F2226;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    padding:8px 10px;
+    transition: 0.5s;
+    display: inline-block;
+    border: 2px solid transparent;
+
+}
+.view_expand_btn a:hover{
+    background: transparent;
+    border: 2px solid #0F2226;
+    color: black;
+}
+
+/* propertices */
+.about_hero_img{
+    width: 80%;
+    margin: auto;
+    margin-bottom: -250px;
+}
+.about_hero_img img{}
+.about_hero_cont{
+    background: #0F2226;
+    height: 530px;
+    padding-bottom: 60px;
+}
+.about_hero_cont h5{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    color: white;
+    font-family: 'Canela';
+    max-width: 854px;
+    width: 100%;
+    margin: auto;
+    padding-bottom:40px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+/* property rent page */
+.about_slide_m_area{
+    margin-top: 80px;
+}
+.about_slide_outfil{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.about_slide_left_img{
+    display: flex;
+    flex-basis: 20%;
+}
+.about_slide_img_box{
+    margin-bottom: -50px;
+    margin-top:100px;
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+ .about_slide_img_box img{
+     height: 100%;
+ }
+.about_img_text h4 {
+    font-size: 55px;
+    font-weight: 300;
+    color: black;
+    /* display: none; */
+    font-family: 'Canela';
+    transform: rotate(90deg);
+    position: relative;
+    left: -85px;
+    bottom: 110px;
+}
+
+.about_slide_r_out{
+    padding-bottom: 60px;
+    padding-top: 50px;
+    flex-basis: 80%;
+    background: #F5F6F6;
+}
+.about_slide_r_cont{
+    float: right;
+}
+.about_slide_r_cont h5{
+    font-size:20px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+     margin-bottom: 35px;
+}
+.about_slide_r_cont h6{
+    font-size:16px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+}
+.about_slide_r_cont h3{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    color: black;
+    max-width:570px;
+    width: 100%;
+    padding-top: 15px;
+    font-family: 'Canela';
+}
+.about_slide_r_cont p{
+    font-size:16px;
+    font-weight: 300;
+    max-width: 416px;
+    width: 100%;
+    line-height: 20px;
+    padding: 30px 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.about_slide_r_cont ul{
+    display: flex;
+    align-items: center;
+}
+.about_slide_r_cont ul li{
+    font-size: 16px;
+    margin-right: 16px;
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+
+}
+.about_slide_r_cont ul li a img:hover{
+    border: 2px solid black;
+     
+}
+.about_slide_r_cont ul li a img{
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+.property_rent_corousel {
+    position: relative;
+}
+.property_rent_corousel .top-custom-arrow.slick-custom-arrow-left.slick-arrow i,.property_rent_corousel .top-custom-arrow.slick-custom-arrow-right.slick-arrow i  {
+    position: absolute;
+    top: 50%;
+    left: -45px;
+    margin-top: -25px;
+    cursor: pointer;
+}
+.property_rent_corousel .top-custom-arrow.slick-custom-arrow-right.slick-arrow i {
+    left: auto;
+    right: -45px;
+}
+.rent_slider_thum img{
+    width: 100%;
+}
+.rent_slide_cont{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.rent_slide_cont h4{
+    font-weight: 300;
+    color: black;
+    font-size: 32px;
+    font-family: 'Canela';
+    background: white;
+    padding-top: 25px;
+    padding-right:65px;
+}
+.under_offer_btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #fff;
+    padding: 10px 15px 8px;
+}
+.under_offer_btn p {
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'Work Sans', sans-serif;
+}
+.rent_slide_tages_area{
+    display: flex;
+    justify-content: space-between;
+}
+.pagination_propertis_area{
+    margin-top: 100px;
+}
+.pagination_propertis_area ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination_propertis_area ul li.active a{
+    color: black;
+} 
+.pagination_propertis_area ul li a {
+    color: #b9b9b9;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Canela';
+    padding: 0 10px;
+    transition: 0.5s;
+}
+.pagination_propertis_area ul li a:hover{
+    color: black;
+}
+.rent_slide_tag_left ul{
+    display: flex;
+    align-items: center;
+}
+.rent_slide_tag_left ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px 0;
+    padding-right: 21px;
+}
+.rent_slide_tag_right ul{
+    display: flex;
+}
+.rent_slide_tag_right ul li,.rent_slide_tag_right_mbl{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px 0;
+    padding-right: 21px;
+}
+.rent_slide_tag_right ul li:last-child{
+    padding-right: 0;
+}
+.post_rent_abiable span{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 0;
+    display: inline-block;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+}
+.post_rent_abiable h2{
+    color: #0F2226;
+    max-width: 815px;
+}
+.post_rent_abiable p{
+    color: black;
+    max-width: 499px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.rent_post_date ul{
+    display: flex;
+}
+.rent_post_date ul li{
+    font-weight: 300;
+    font-size: 16px;
+   margin-right:22px;
+   padding-bottom: 38px;
+    color: black;
+    font-family: 'Work Sans', sans-serif;  
+}
+.rent_post_cont_menu ul{
+    display: flex;
+    align-items: center;
+}
+.rent_post_cont_menu ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    margin-right:20px;
+    display: inline-block;
+    color: black;
+    border-bottom: 4px solid transparent ;
+    transition: 0.5s;
+    font-family: 'Work Sans', sans-serif;
+}
+.rent_post_cont_menu ul li a:hover{
+   border-bottom: 4px solid #0F2226 ;
+}
+.rent_post_cont_menu ul li:first-child a {
+    width: 182px;
+    height: 41px;
+    background: #0F2226;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid transparent;
+    transition: 0.5s;
+
+}
+.rent_post_cont_menu ul li:first-child a:hover{
+    background: transparent;
+    border: 2px solid #0F2226;
+    color: #0F2226;
+}
+.filterDiv {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  .tabcontent,.property_tab_left_s{
+      background:#F5F6F6;
+  }
+  /* Style the tab */
+.tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #ccc;
+    background-color: #f1f1f1; */
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 24px;
+    font-family: 'Canela';
+    color:gray;
+    font-weight: 300;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    color: black;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+   color: black;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+     
+    border-top: none;
+  }
+  .tabcontent{
+      position: relative;
+  }
+
+  .location_ifrem iframe{
+      width: 100%;
+  }
+  .resize_icon{
+      cursor: pointer;
+      position: absolute;
+      right:30px;
+      display: inline-block;
+      top: 10px;
+      display: none;
+  }
+  .property_tab_top{
+      padding:40px;
+      padding-top: 40px;
+      margin-top: 65px;
+  }
+  .property_tab_top h3{
+      font-size: 32px;
+      font-weight: 300;
+      color: black;
+      font-family: 'Canela';
+      padding-bottom: 10px;
+  }
+  .property_tab_top ul li a:hover{
+      border-bottom: 2px solid gray;
+      color: gray;
+  }
+  .property_tab_top ul li a{
+      transition: 0.5s;
+      border-bottom: 2px solid transparent;
+      font-size:16px;
+      font-weight: 300px;
+      color: black;
+      font-family: 'Work Sans', sans-serif;
+
+  }
+.property_tab_bootm{
+    padding:40px;
+    margin-top: 52px;
+}
+.property_tab_bootm ul li{
+    margin-bottom:12px;
+}
+.property_tab_bootm ul li a{
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    padding: 10px;
+    width: 165px;
+    transition: 0.5s;
+    text-align: center;
+
+}
+.property_tab_bootm ul li a:hover{
+    background: rgb(7, 43, 7);
+    color: white;
+}
+.leyo_profile_area{
+    margin-top: 60px;
+}
+.propety_logo_are {
+    background: #0F2226;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-md-5{
+    flex-basis: 40%;
+}
+.middel-md-2{
+    flex-basis: 20%;
+}
+.right-md-5 {
+    flex-basis: 40%;
+    background: #0F2226;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 55px;
+}
+.right-md-5 p{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+.right-md-5 h4{
+    font-size: 32px;
+    font-weight: 300;
+    font-family: 'Canela';
+    color: white;
+}
+.right-md-5 ul{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.right-md-5 ul li a{
+    margin-right: 20px;
+}
+.right-md-5 ul li a i:hover{
+    color: gray;
+}
+.right-md-5 ul li a i{
+    color: white;
+    transition: 0.5s;
+}
+.singup_area{
+    background: #F5F6F6;
+}
+.singup_m_area{
+    margin-top:60px;
+}
+.singup_box{
+    display: flex;
+    padding:50px 80px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+.singup_left h4{
+    font-size: 32px;
+    font-weight: 300;
+    color: #0F2226;
+    font-family: 'Canela';
+}
+
+.sing_form_area{
+    display: flex;
+    align-items: center;
+}
+.singup_items input[type="submit"]{
+    border: 1px solid #0F2226;
+    padding: 3px 35px;
+    transition: 0.5s;
+}
+.singup_items input[type="submit"]:hover{
+    background: #0F2226;
+    color: white;
+}
+.singup_items input::placeholder{
+    color: #0F2226;
+    font-size: 16px;
+    font-weight: 300;
+    
+    font-family: 'Work Sans', sans-serif;
+
+}
+.singup_items input{
+    border: none;
+    border-bottom: 1px solid #0F2226;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px 0;
+    font-family: 'Work Sans', sans-serif;
+    background: transparent;
+}
+.suggest_title h4{
+    font-weight: 300;
+    color: #0F2226;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Canela';
+    text-align: center;
+}
+.important_nu_area{
+    max-width: 814px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+.important_nu_area h6{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 300;
+     color: black;
+    font-family: 'Work Sans', sans-serif;
+}
+.important_nu_area p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    line-height: 18px;
+}
+
+.propety_inticator {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+}
+.rent_slide_tages_area h3{
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
+    font-family: 'Canela';
+    display: none;
+}
+.mobile_sort_tems_view{
+    display: none;
+}
+.pro_mobile_btn,.back{
+    display: none;
+}

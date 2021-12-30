@@ -1,0 +1,493 @@
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+	/*about us page*/
+	section.aboutus_team_slider_area {
+	    margin: 160px 70px 50px;
+	}
+	.aboutus_banner_text {
+	    padding: 335px 84px 55px;
+	    margin: 0;
+	    margin-top: -283px;
+	}
+	.aboutus_member_info {
+	    padding-left: 25px;
+	}
+	.aboutus_member_info{
+		padding-right: 20px;
+	}
+	.member_name {
+	    transform: inherit;
+	    bottom: 17%;
+	    background: #fff;
+	    max-width: 100%;
+	    left: 0;
+	    max-height: max-content;
+	    right: inherit;
+	}
+	.aboutus_lreo_history_text {
+	    padding: 0 80px 0 40px;
+	}
+	.lreo_history_title {
+	    transform: inherit;
+	    top: 0;
+	    background: #fff;
+	    padding: 5px 15px 0;
+	}
+	.header_request_view_btn{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.header_request_view_btn{
+		display: none;
+	}
+
+	/*Home Page*/
+	.after_banner_text {
+    	padding: 135px 40px;
+	}
+	.our_team_area {
+	    margin-top: 100px;
+	}
+
+	/*about us page*/
+	.aboutus_banner_text {
+	    background: #0F2226;
+	    padding: 45px 30px 60px;
+	    margin: 0;
+	}
+	/*about us page our team section*/
+	section.aboutus_team_slider_area {
+	    margin: 116px 0;
+    	position: relative;
+	}
+	.aboutus_team_info {
+	    display: block !important;
+	}
+	.aboutus_team_member {
+	    width: 100%;
+	}
+	.aboutus_team_member_img {
+	    max-width: 75%;
+	}
+	.aboutus_team_member {
+	    width: 100%;
+	}
+	.aboutus_team_info {
+	    display: block !important;
+	}
+	.aboutus_team_member_img {
+	    max-width: 40%;
+	    padding-top: 30px;
+	    margin: 0 auto;
+	}
+	.member_name {
+	    right: 75px;
+	}
+	.aboutus_member_info {
+	    width: 100%;
+	    padding: 0 20px;
+	}
+	.aboutus_team_heading {
+	   margin-left: -50px;
+	} 
+	.aboutus_slide_bg {
+	    width: 100%;
+	    height: 87%;
+	    bottom: -30px;
+	    top: inherit;
+	}
+	span.aboutus_pagingInfo {
+	    top: 45px;
+	    left: 50%;
+	    margin-left: -25px;
+	}
+	.aboutus_team_slider_items .top-custom-arrow.slick-custom-arrow-left.slick-arrow, .aboutus_team_slider_items .top-custom-arrow.slick-custom-arrow-right.slick-arrow {
+	    top: 93px;
+    	left: 27%;
+    	z-index: 999999999999999;
+	}
+	.aboutus_team_slider_items .top-custom-arrow.slick-custom-arrow-right.slick-arrow {
+	    left: auto;
+	    right: 27%;
+	}
+
+	.aboutus_history_text {
+		padding: 25px;
+	}
+	.aboutus_lreo_history_text {
+	    padding: 0 0 0 20px;
+	}
+	.lreo_history_title {
+	    transform: inherit;
+	    top: -100px;
+	}
+	.about_us_lreo_history_area {
+	    margin-top: 130px;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	/*common css*/
+	h1{
+	    font-size: 40px;
+	}
+
+	h2{
+	    font-size: 30px;
+	    line-height: 36px;
+	}
+
+	h3 {
+	    font-size: 24px;
+	    line-height: 30px;
+	}
+
+	p.second-subtitle{
+	    font-size: 18px;
+	}
+
+	.mobile_show{
+		display: block;
+	}
+	.header_request_view_btn{
+		display: none;
+	}
+
+
+	/*header*/
+	.header_area.fixed{
+		height: 65px;
+	}
+	.header_area {
+	    position: relative;
+	}
+	.off_can_trigger.mobile_show {
+		position: absolute;
+	    top: 20px;
+	    right: 40px;
+	    font-size: 20px;
+	}
+	.if_home.scroll_logo{
+		display: none;
+	}
+	.header_area .logo, .header_area.fixed .logo {
+	    display: none;
+	}
+	.header_menu {
+	    position: absolute;
+	    width: 100%;
+	    left: -100%;
+	    top: 0;
+	    transition: 0.5s;
+	    z-index: 99999999;
+	    height: 100vh;
+	    background: #0F2226;
+	}
+	.header_menu.active{
+		left: 0;
+	}
+	span.off_canvas_close {
+	    position: absolute;
+	    top: 15px;
+	    right: 25px;
+	    font-size: 23px;
+	    color: #fff;
+	}
+	ul.menu_list {
+	    background: #0F2226;
+	    flex-direction: column;
+	    padding: 60px 0;
+	    height: 100vh;
+	}
+	li.mobile_logo {
+	    padding-bottom: 60px;
+	}
+	ul.menu_list li a {
+	    color: #fff;
+	    padding: 0;
+	    font-family: Canela-Thin;
+	    font-size: 40px;
+	    line-height: 70px;
+	}
+	/*home  page*/
+	.lreo_big_logo{
+		margin: 0;
+	}
+	ul.buy_rent_list_menu {
+	    flex-direction: column;
+	}
+	ul.buy_rent_list_menu li a {
+	    font-size: 36px;
+	    line-height: 42px;
+	}
+	.our_team_slide_area .top-custom-arrow.slick-custom-arrow-right i {
+	    display: none;
+	}
+	.our_team_slide_area .top-custom-arrow i {
+	    display: none;
+	}
+	.our_team_slide_area {
+	    background: #F5F6F6;
+	}
+	.our_team_slide_area .our_team_slide_area .slick-list.draggable {
+	    margin: 0;
+	}
+	.slick-initialized .slick-slide {
+	    display: block;
+	    margin-right: 15px;
+	}
+
+	.after_banner_text {
+	    padding: 70px 10px;
+	    margin: -30px 0 0 0;
+	}
+	.banner_img {
+	    margin: 0;
+	}
+	.banner_area .col-md-12 {
+	    padding: 0;
+	}
+	.our_team_area {
+	    margin-top: 90px;
+	}
+	.our_team_title {
+	    padding: 0 5px;
+	}
+	.our_team_title h3 {
+	    font-size: 30px;
+	    line-height: 36px;
+	}
+	.after_team_text {
+	    margin: 70px 0;
+	    padding: 0 5px;
+	}
+	.buy_rent_sold_listing {
+	    padding: 0 20px;
+	}
+	.buy_rent_sold_listing p.second-subtitle {
+	    font-size: 16px;
+	}
+	.buy_rent_single_card.card_three {
+	    margin: 0 0 45px;
+	}
+	.buy_rent_card_image_area {
+	    margin: 0;
+	    padding: 0;
+	}
+	.buy_rent_card_image_area .col-md-6 {
+	    padding: 0;
+	}
+	.buy_rent_services_area {
+		margin-top: 40px;
+	}
+	.view_more_property_btn a {
+	    background: #0F2226;
+	    color: #fff;
+	    padding: 13px 20px;
+	}
+	.view_more_property_btn {
+	    margin-bottom: 80px;
+	    padding-left: 16px;
+	}
+	section.after_services_img {
+	    margin-bottom: -90px;
+	}
+	.footer_testimonial_area {
+	    padding: 25px 20px 0;
+	    width: 100%;
+	}
+	.footer_testi_person {
+	    padding: 60px 0 120px;
+	}
+	.footer_bottom_area {
+	    padding: 0 20px;
+	}
+	.footer_contact_area {
+	    flex-direction: column;
+	}
+	.footer_contact_social {
+	    margin-top: 50px;
+	}
+	ul.footer_social li a i {
+	    padding: 0 20px 0 0;
+	}
+	.footer_menu_area {
+	    margin-bottom: 45px;
+	}
+	ul.footer_menu {
+	    flex-direction: column;
+	}
+	ul.footer_menu li a span {
+	    display: none;
+	}
+	/*slick dot custom*/
+	.our_team_area .slick-dots li.slick-active {
+	    width: 50px;
+	    height: 4px;
+	    background: #000;
+	    padding: 4px;
+	    margin-bottom: -3px;
+	}
+	.our_team_area .slick-dots li {
+	    width: 13%;
+	    background: #000;
+	    height: 1px;
+	    margin-left: -6px;
+	}
+	.our_team_area .slick-dots li button {
+	    display: none;
+	}
+
+	/*contact page*/
+	.footer_contact_info {
+	    padding: 0 20px;
+	    margin-top: 50px;
+	}
+	.contact_social p {
+	    padding: 0;
+	}
+	.footer_contact_top_area {
+	    margin-bottom: 80px;
+	}
+
+	/*terms & condition page*/
+	section.terms_condition_area {
+	    margin: 0px 0 115px;
+	    padding: 0 15px;
+	}
+
+	/*About us page*/
+	.about_us_banner_area {
+	    overflow: hidden;
+	}
+	.aboutus_banner_text {
+	    padding: 150px 70px 50px;
+	    margin: -100px -40px 0;
+	}
+
+	.services_img_card_area {
+	    margin: 0;
+	}
+	.services_card_items {
+	    column-count: 1;
+	    column-gap: 0;
+	}
+	.aboutus_single_service.sell .services_card_text {
+	    padding: 0;
+	}
+	.aboutus_single_service.sell {
+	    text-align: left;
+	}
+
+	section.aboutus_team_slider_area .col-md-12 {
+	    padding: 0;
+	}
+
+	.about_us_lreo_history_area {
+	    margin-bottom: 102px;
+	}
+	.aboutus_lreo_text_bg {
+	    height: 500px;
+	    top: -600px;
+	}
+	.about_us_history {
+	    flex-direction: column;
+	}
+	.aboutus_history_text {
+	    max-width: inherit;
+	    padding: 0 20px;
+	}
+	.aboutus_history_img {
+	    text-align: right;
+	    margin-top: 30px;
+	}
+	.about_us_history_area {
+	    margin: 40px 0 95px;
+	}
+	.aboutus_history_img img {
+	    max-width: 75%;
+	}
+	.about_us_lreo_history {
+	    flex-direction: column;
+	}
+	.aboutus_lreo_history_img img {
+	    max-width: 75%;
+	}
+	.aboutus_lreo_history_text {
+	    max-width: inherit;
+	    padding: 0 20px;
+	}
+	.lreo_history_title {
+	    position: inherit;
+	    left: 0;
+	    top: 0;
+	    transform: inherit;
+	    padding: 45px 0 20px;
+	}
+	.aboutus_lreo_history_text h3 {
+	    padding: 0 0 50px;
+	}
+
+	/*about us page our team section*/
+	section.aboutus_team_slider_area {
+	    margin: 116px 0;
+    	position: relative;
+	}
+	.aboutus_team_info {
+	    display: block !important;
+	}
+	.aboutus_team_member {
+	    width: 100%;
+	}
+	.aboutus_team_member_img {
+	    max-width: 75%;
+	}
+	.aboutus_team_member {
+	    width: 100%;
+	}
+	.aboutus_team_info {
+	    display: block !important;
+	}
+	.aboutus_team_member_img {
+	    max-width: 75%;
+	    padding-top: 30px;
+	}
+	.member_name {
+	    right: 75px;
+	}
+	.aboutus_member_info {
+	    width: 100%;
+	    padding: 0 20px;
+	}
+	.aboutus_team_heading {
+	   margin-left: -50px;
+	} 
+	.aboutus_slide_bg {
+	    width: 100%;
+	    height: 87%;
+	    bottom: -30px;
+	    top: inherit;
+	}
+	span.aboutus_pagingInfo {
+	    top: 45px;
+	    left: 50%;
+	    margin-left: -25px;
+	}
+
+	.aboutus_team_slider_items .top-custom-arrow.slick-custom-arrow-left.slick-arrow, .aboutus_team_slider_items .top-custom-arrow.slick-custom-arrow-right.slick-arrow {
+	    top: 93px;
+    	left: 27%;
+    	z-index: 999999999999999;
+	}
+	.aboutus_team_slider_items .top-custom-arrow.slick-custom-arrow-right.slick-arrow {
+	    left: auto;
+	    right: 27%;
+	}
+
+}
+

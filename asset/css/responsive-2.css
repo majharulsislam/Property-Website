@@ -1,0 +1,206 @@
+
+@media all and (max-width:991px){
+
+    .pagination_propertis_area {
+        margin-top: 60px;
+    }
+    .post_rent_abiable h4 br{
+        display: none;
+    }
+    .post_rent_abiable h4 {   
+        font-size: 30px; 
+    }
+    .property_rent_corousel .top-custom-arrow.slick-custom-arrow-right.slick-arrow i {
+        right: -22px;
+        left: auto;
+    }
+    .property_rent_corousel .top-custom-arrow.slick-custom-arrow-left.slick-arrow i {
+        left: -22px;
+    }
+    .propety_inticator {
+        right: -30px;
+    }
+    .mobile_sort_tems_view{
+        display: block;
+    }
+    .pro_mobile_btn a{
+        padding: 10px 40px;
+    }
+    .singup_box{
+        padding: 45px;
+    }
+    .rent_slide_tages_area h3 {
+       
+        margin-top: 60px;
+    }
+    .rent_slide_tages_area { 
+         margin-top: 30px;
+    }
+    .rent_slide_tag_right{
+        display: none;
+    }
+    .rent_slide_tages_area {
+       
+        flex-direction: column;
+    }
+    .mobile_sort_tems_view{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media all and (max-width:767px){
+    .property_under_offer {
+        margin-bottom: 90px;
+    }
+    .pagination_propertis_area {
+        margin-top: 40px;
+    }
+    .pro_mobile_btn {
+        display: block;
+        margin-bottom: 0;
+        float: left;
+        margin-top: 35px;
+        margin-bottom: 45px;
+    }
+    .property_thum_p {
+        text-align: center;
+        background: #0F2226;
+        padding: 60px 0;
+    }
+    .property_thum_p img {
+        width: 71%;
+    }
+    .propety_logo_are {
+       
+        padding-top: 60px;
+    }
+
+    .property_rent_corousel .top-custom-arrow.slick-custom-arrow-left.slick-arrow i, .property_rent_corousel .top-custom-arrow.slick-custom-arrow-right.slick-arrow i {
+        top: auto;
+        bottom: -47px;
+        right: 70px;
+        left: inherit;
+    }
+    .property_rent_corousel .top-custom-arrow.slick-custom-arrow-left.slick-arrow i {
+        right: auto;
+        left: 70px;
+    }
+    .right-md-5{
+        padding-bottom: 60px;
+        padding-left: 0;
+    }
+    .leyo_outbox {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .right-md-5 ul {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-md-5,.right-md-5,.middel-md-2{
+        flex-basis:100%;
+        text-align: center;
+    }
+    .rent_slide_cont {
+       display: none;
+    }
+    .rent_slide_tages_area h3{
+        display: block;
+        width: 100%;
+    }
+    .rent_post_cont_menu ul li:first-child a {
+        
+        display: none;
+    }
+    .back{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 45px;
+        width: 100%!important;
+        float: inherit;
+        text-align: left!important;
+    }
+    .singup_box {
+        
+        flex-wrap: wrap;
+    }
+    .singup_box { 
+        padding: 50px 14px;  
+    }
+    .singup_left h4 {
+        font-size: 29px;
+       padding-bottom:50px;
+    }
+    .sing_form_area {  
+        flex-wrap: wrap;
+    }
+    
+    .singup_left h4 br{
+        display: none;
+    }
+    .singup_left,.singup_form,.singup_items{
+        flex-basis: 100%;
+    }
+    .singup_items input[type="submit"] {
+        border: 1px solid #0F2226;
+        padding:15px 51px;
+        transition: 0.5s;
+        width: 66%;
+        margin-top: 30px;
+    }
+    .singup_items input{
+        width: 100%;
+    }
+
+    .propety_inticator {
+        top: inherit;
+        bottom: -50px;
+        right: inherit;
+        left: 50%;
+        margin-left: -10px;
+    }
+    .under_offer_btn {
+        bottom: 0;
+        right: auto;
+        left: 43%;
+        margin-left: -50px;
+    }
+    
+}
+
+@media all and (max-width:480px){
+    .suggest_title h4{
+        font-size: 30px;
+    }
+    .property_tab_bootm {
+        margin-top: 0;
+    }
+    .tab {   
+        justify-content: space-between;   
+    }
+    .tab button {  
+        padding: 14px 4px;
+        font-size: 21px;     
+    }
+    .pagination_propertis_area ul li a {
+        font-size:30px;
+    }
+    .pro_filter_btn ul li {
+        font-size:20px;
+        padding: 0 9px;
+    }
+    .pro_filter_btn {
+       margin-top: 11px;
+    }
+    .pf_cont h2 {
+        font-size: 24px;
+    }
+    .pf_cont ul li {
+        padding-left: 5px;
+        padding-right: 6px; 
+    }
+}
+
+
